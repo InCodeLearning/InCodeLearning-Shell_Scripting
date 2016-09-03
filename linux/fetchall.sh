@@ -1,4 +1,5 @@
 #!/bin/bash
+# fetch all changes in specified git branches
 # Usage: fetchall.sh branch ...
 
 set -xe

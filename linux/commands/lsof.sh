@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# lsof: list of open files
 # check use of /bin/bash file 
 lsof /bin/bash
 # check use of directory recursively

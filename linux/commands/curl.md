@@ -16,11 +16,11 @@ curl -u username:password http://www.example.com
 # GET request, idempotent
 # returns html source of apple front page
 curl https://www.apple.com
-# -H --header customer header, -v --verbose
+# -H --header custom header, -v --verbose
 curl -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1
 curl -v -H "Accept:application/json" -H "Accept-encoding:gzip" http://localhost:8888/demo-rest-jersey-spring/podcasts/
 
-# DELETE request
+# DELETE request, -X --request (HTTP) Specifies a custom request method
 curl -i -X DELETE http://localhost:8888/demo-rest-jersey-spring/podcasts/
 
 # POST request, used to modify and update a resource, create unamed resource (return name)

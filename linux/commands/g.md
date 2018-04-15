@@ -22,6 +22,12 @@ egrep --color 'pattern|$' file
 # -E, --extended-regexp, interpret pattern as an extended regular expression (i.e. force grep to behave as egrep)
 ```
 
+## grep gz zipped files
+
+```bash
+find . -name "*.gz" -exec zgrep -nI "text to search" {} +
+```
+
 ## References
 
 - [SO - grep recursively](https://stackoverflow.com/questions/1987926/how-do-i-grep-recursively)

@@ -1,6 +1,6 @@
-grep - file pattern searcher
+## grep - file pattern searcher
 
-## grep recursively
+grep recursively
 
 ```bash
 grep --color --include="*.xxx" -nrHI "my Text to grep" *
@@ -13,7 +13,7 @@ grep --color --include="*.xxx" -nrHI "my Text to grep" *
 # --color, highlight matches
 # . include files like .git
 ```
-## grep view whole file with highlighted pattern
+grep view whole file with highlighted pattern
 
 ```bash
 grep --color -E 'pattern|$' file
@@ -22,13 +22,13 @@ egrep --color 'pattern|$' file
 # -E, --extended-regexp, interpret pattern as an extended regular expression (i.e. force grep to behave as egrep)
 ```
 
-## grep gz zipped files
+grep gz zipped files
 
 ```bash
 find . -name "*.gz" -exec zgrep -nI "text to search" {} +
 ```
 
-## References
+References
 
 - [SO - grep recursively](https://stackoverflow.com/questions/1987926/how-do-i-grep-recursively)
 - [view file with highlighted matches](https://stackoverflow.com/a/981831)

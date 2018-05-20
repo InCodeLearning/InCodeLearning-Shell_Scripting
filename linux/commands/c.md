@@ -1,4 +1,35 @@
-## Test Rest API with curl
+## chomod - change mode
+
+```bash
+chmod [options] mode[,mode] file1 [file2 ...]
+-R recursive, i.e. include objects in subdirectories
+-f force, forge ahead with all objects even if errors occur
+-v verbose, show objects processed
+# If a symbolic link is specified, the target object is affected.
+# File modes directly associated with symbolic links themselves are typically never used.
+# To view the file mode, the ls or stat
+
+# octal modes
+7	read, write and execute	    rwx
+6	read and write	            rw-
+5	read and execute     	    r-x
+4	read only       	    r--
+3	write and execute   	    -wx
+2	write only	            -w-
+1	execute only        	    --x
+0	none	                    ---
+
+# symbolic modes
+
+chmod a+r publicComments.txt # add read permission for all (user, group, other)
+chomod ugo+x file # same as above
+
+```
+
+
+## curl - transfer a url
+
+Test Rest API with curl
 
 Resources:
 

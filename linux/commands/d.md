@@ -1,6 +1,6 @@
-#!/bin/bash
+## dpkg - debian package manager
 
-# debian package manager
+```
 # -l and -L are options for dpkg-query but works directly with dpkg
 # list all packages
 dpkg -l | less # --list
@@ -11,3 +11,11 @@ dpkg -l | grep jdk
 dpkg -L openjfx-source
 # find which package a file belongs
 dpkg -S /usr/lib/jvm/java-8-openjdk-amd64/javafx-src.zip
+```
+
+
+## du - disk usage
+
+```
+du
+```

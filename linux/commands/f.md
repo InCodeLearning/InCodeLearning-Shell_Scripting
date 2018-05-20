@@ -1,7 +1,6 @@
-#!/bin/bash
+# find - file search tool
 
-# find file search tool
-
+```bash
 # find all log files in current directory
 find . -name "*.log"
 # find by permission
@@ -41,3 +40,4 @@ find . -type f -print | xargs file
 find . -type f -print | xargs grep "hostname"
 # use -p to confirm before execution
 find . -name "*.sh" | xargs -p mv {} ..
+```
